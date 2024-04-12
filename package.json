@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/Ahmadusama1122/SIT725-2024-T1-prac3#readme",
   "dependencies": {
-    "express": "^4.19.1"
+    "express": "^4.19.1",
+    "mongodb": "^6.5.0"
   }
 }
