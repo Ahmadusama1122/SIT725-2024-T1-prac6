@@ -34,7 +34,19 @@ async function getAllCards() {
     }
 }
 
+async function deleteCard(cardId) {
+    try {
+        await connectDB();
+        const result = await collection.deleteOne({ _id: cardId });
+        return result;
+    } catch (err) {
+        console.error(err);
+        throw err;
+    }
+}
+
 module.exports = {
     postCard,
-    getAllCards
+    getAllCards,
+    deleteCard
 };

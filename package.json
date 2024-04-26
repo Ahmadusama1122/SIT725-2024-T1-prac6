@@ -4,7 +4,7 @@
   "description": "json file",
   "main": "y",
   "scripts": {
-    "test": "y"
+    "test": "mocha --reporter spec"
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,12 @@
   },
   "homepage": "https://github.com/Ahmadusama1122/SIT725-2024-T1-prac3#readme",
   "dependencies": {
+    "chai": "^5.1.0",
     "express": "^4.19.1",
     "mongodb": "^6.5.0"
+  },
+  "devDependencies": {
+    "mocha": "^10.4.0",
+    "supertest": "^6.3.4"
   }
 }
